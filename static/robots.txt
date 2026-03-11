@@ -1,4 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
-Sitemap: https://deepfakes1m.github.io/sitemap.xml
