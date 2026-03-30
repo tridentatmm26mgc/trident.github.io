@@ -11,7 +11,7 @@
     <meta name="description" content="TRIDENT: Tri-modal Deepfake Perception, Detection, and Hallucination Grand Challenge">
     <meta name="author" content="">
 
-    <title>TRIDENT </title>
+    <title>TRIDENT</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -98,8 +98,8 @@
 				<ul class="nav navbar-nav">
 					
 					<li class="menuItem"><a href="#scope">Home</a></li>
-					<li class="menuItem"><a href="#submit">Submission</a></li>
-					<li class="menuItem"><a href="#program">Program</a></li>
+					<li class="menuItem"><a href="#guidelines">Participation Guidelines</a></li>
+					<li class="menuItem"><a href="#dates">Important Dates</a></li>
 					<!-- <li class="menuItem"><a href="#invited">Invited Speakers</a></li> -->
 					<li class="menuItem"><a href="#organizers">Organizers</a></li>	
 					<!-- <li class="menuItem"><a href="#sponsors">Sponsors</a></li>	-->
@@ -180,7 +180,7 @@
     </div>
 
 	<!-- Call for Papers -->
-    <div id ="submit" class="content-section-b">
+    <div id ="guidelines" class="content-section-b">
 
         <div class="container">
 			
@@ -191,27 +191,145 @@
                 </div-->
 				
                 <div class="wow fadeInLeftBig" data-animation-delay="200">   
-                    <h3 class="section-heading">Submission</h3>
+                    <h3 class="section-heading">Participation Guidelines</h3>
                     
-					
-                    <p class="lead"  style="text-align:justify">
-						We will invite the top-3 performing teams to submit a technical paper.
-						Papers will be limited to 6+2 pages according to the <u><a href="https://www.acm.org/publications/proceedings-template" Target="blank">ACM Article Template</a></u> Please remember to add Concepts and Keywords. Please use the template in traditional double-column format to prepare your submissions. Please list all the author information in your submission. 
-						All papers will be reviewed by at least two reviewers with double blind policy. Papers will be selected based on relevance, significance and novelty of results, technical merit, and clarity of presentation. 
-						Papers will be published in the conference proceedings of ACM Multimedia 2026. 
+					<h4 class="section-heading">1. Overview</h4>
+					<p class="lead" style="text-align:justify">
+						The TRIDENT Challenge 2026 is an ACM MM 2026 Grand Challenge on tri-modal deepfake perception, detection, and hallucination analysis. Participants are invited to compete across three independent tracks: Image, Video, and Audio, using the TRIDENT dataset. These guidelines govern all aspects of participation, from eligibility to submission and evaluation.
 					</p>
-					<p class="lead"  style="text-align:justify">
-						At the day of the workshop, oral presentations will be conducted by authors who are attending in-person.
+
+					<h4 class="section-heading">2. Eligibility</h4>
+					<p class="lead" style="text-align:justify">Participation is open to any research team worldwide, subject to the following conditions:</p>
+					<ul class="lead">
+						<li>Each team must have a responsible team leader who is a faculty member, researcher, or staff member with formal affiliation. The team leader is responsible for the team's compliance with these guidelines and the TRIDENT End User License Agreement (EULA).</li>
+						<li>Students may participate as team members but may not serve as the team leader unless otherwise approved by the organizers.</li>
+						<li>Each participant may only be a member of one team per track.</li>
+						<li>Teams must register via the official registration form and receive approval from the organizers before accessing the dataset. Participation prior to approval is not permitted.</li>
+					</ul>
+
+					<h4 class="section-heading">3. Tracks</h4>
+					<p class="lead" style="text-align:justify">Participants may enter one or more of the following tracks:</p>
+					<ul class="lead">
+						<li>Image Track</li>
+						<li>Video Track</li>
+						<li>Audio Track</li>
+					</ul>
+					<p class="lead" style="text-align:justify">Each track includes the following task types:</p>
+					<ul class="lead">
+						<li><strong>Structured VQA.</strong> Participants must answer True/False Questions (TFQ) and Multiple-Choice Questions (MCQ). Required outputs are "True" or "False" for TFQ, and the selected option label for MCQ.</li>
+						<li><strong>Type-A Open-Ended Questions.</strong> Given that the sample is known to be manipulated, the model must provide a structured description of observable artifacts and manipulation evidence.</li>
+						<li><strong>Type-B Open-Ended Questions.</strong> Given a sample of unknown authenticity, the model must provide an authenticity label ("Likely Authentic" or "Likely Manipulated") and a short reasoning paragraph supporting the decision.</li>
+					</ul>
+
+					<h4 class="section-heading">4. Challenge Phases</h4>
+					<p class="lead" style="text-align:justify"><strong>4.1 Phase 1 – Training and Validation Data Released</strong><br>
+						The organizers will release the Training Set and the Validation Set. These datasets are provided for model training, method development, and local evaluation. No official leaderboard will be provided during this phase.
+					</p>
+					<p class="lead" style="text-align:justify"><strong>4.2 Phase 2 – Testing Data Released; Submission Start</strong><br>
+						The organizers will release the Test Set (without ground-truth labels). Participants must run inference on the test set and submit their predictions through the official competition platform.
+					</p>
+
+					<h4 class="section-heading">5. Submission</h4>
+					<p class="lead" style="text-align:justify"><strong>5.1 Platform</strong><br>
+						All submissions must be made through the official Codabench competition page. Links to each track's competition page will be provided upon dataset access approval. A starter kit will be provided after registration is validated, containing submission format examples and instructions to help participants get started.
+					</p>
+					<p class="lead" style="text-align:justify"><strong>5.2 Submission Limits</strong><br>
+						Each team is allowed a maximum of 3 submissions per day per track. Submissions exceeding this limit will be automatically rejected by the platform.
+					</p>
+					<p class="lead" style="text-align:justify"><strong>5.3 File Format</strong><br>
+						Submissions must be in JSON format. Files must follow the naming convention: <code>{teamname}_{track}.json</code><br>
+						For example: TeamAlpha_image.json, TeamA_video.json, TeamA_audio.json.<br>
+						Only submissions that pass automatic format validation will be counted as valid. Invalid submissions will not appear on the leaderboard and will count toward the daily limit.
+					</p>
+					<p class="lead" style="text-align:justify"><strong>5.4 Abstract Requirement</strong><br>
+						Each submission must be accompanied by a 1–2 page abstract describing the team's method. The abstract must be submitted as a PDF file named <code>{teamname}_abstract.pdf</code> and sent to <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a> before or alongside your final submission on Codabench. Submissions without a valid abstract will appear on the public leaderboard but will not be considered for the final award decision.
+					</p>
+
+					<h4 class="section-heading">6. Evaluation Criteria and Metrics</h4>
+					<p class="lead" style="text-align:justify"><strong>6.1 Evaluation Dimensions</strong><br>
+						Each track is evaluated across three dimensions:
+					</p>
+					<ul class="lead">
+						<li><strong>Detection:</strong> Binary classification performance distinguishing real from fake content.</li>
+						<li><strong>Perception:</strong> Fine-grained identification of manipulation artifacts using human-annotated evidence.</li>
+						<li><strong>Hallucination Robustness:</strong> Reliability of model reasoning and resistance to producing incorrect or unsupported predictions.</li>
+					</ul>
+					<p class="lead" style="text-align:justify"><strong>6.2 Official Ranking Metric</strong><br>
+						The official ranking metric is the Tri-Metric Composite Score (TCS), defined as:<br>
+						<strong>TCS = 0.4 &times; Detection + 0.3 &times; Hallucination Robustness + 0.3 &times; Perception</strong><br>
+						Teams are ranked by their TCS score in descending order within each track.
+					</p>
+					<p class="lead" style="text-align:justify"><strong>6.3 Tie-Breaking</strong><br>
+						In the event of a tie in TCS, rankings will be determined in the following order:
+					</p>
+					<ol class="lead">
+						<li>Higher Detection score</li>
+						<li>Higher Hallucination Robustness score</li>
+						<li>Higher Perception score</li>
+					</ol>
+
+					<h4 class="section-heading">7. External Data and Models</h4>
+					<p class="lead" style="text-align:justify"><strong>7.1 Permitted Resources</strong><br>
+						The use of external resources is permitted, including: external datasets, pretrained models, foundation models, large language models (LLMs) and multimodal large language models (MLLMs), and other publicly available resources. All external resources used must be clearly disclosed in the submitted abstract and method description.
+					</p>
+					<p class="lead" style="text-align:justify"><strong>7.2 Prohibited Practices</strong><br>
+						The following are strictly prohibited:
+					</p>
+					<ul class="lead">
+						<li>Use of test set labels or private annotations</li>
+						<li>Any form of data leakage from the test set</li>
+						<li>Any attempt to reconstruct or infer hidden ground truth</li>
+						<li>Use of any resources not disclosed in the method description</li>
+					</ul>
+
+					<h4 class="section-heading">8. Leaderboard</h4>
+					<ul class="lead">
+						<li>A public leaderboard will be maintained on Codabench throughout the submission period, updated automatically after each validated submission.</li>
+						<li>The leaderboard displays TCS scores for each track independently.</li>
+						<li>The final leaderboard is determined at the close of the submission period (June 10, 2026). Results submitted after the deadline will not be considered.</li>
+						<li>The organizers reserve the right to verify the top-ranked submissions before confirming final results. Winners will be announced on June 15, 2026.</li>
+						<li>If a participant believes there is a scoring error or evaluation issue, they may flag the concern by emailing <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a> before the final results are announced on June 15, 2026.</li>
+					</ul>
+
+					<h4 class="section-heading">9. Code and Model Release</h4>
+					<p class="lead" style="text-align:justify">
+						Winners are strongly encouraged to release their code and model weights to support reproducibility and benefit the research community. While release is not mandatory, teams that do so will be acknowledged in the official challenge report. All participants are required to retain their code and model weights for at least 30 days after the results announcement. Winners will be asked to provide their code to the organizers for validation purposes.
+					</p>
+
+					<h4 class="section-heading">10. Awards and Recognition</h4>
+					<ul class="lead">
+						<li>One winner will be selected per track (Image, Video, Audio) based on the final TCS ranking.</li>
+						<li>Each winning team will be invited to submit a paper describing their method to the ACM MM 2026 main conference.</li>
+						<li>Acceptance of the invited paper is subject to review by the challenge organizers. The organizers do not guarantee acceptance.</li>
+						<li>At least one full registration to ACM MM 2026 is required for the paper to be published in the proceedings.</li>
+					</ul>
+
+					<h4 class="section-heading">11. Disqualification</h4>
+					<p class="lead" style="text-align:justify">The organizers reserve the right to disqualify any team found to have:</p>
+					<ul class="lead">
+						<li>Violated these Participation Guidelines or the TRIDENT EULA</li>
+						<li>Used prohibited resources or engaged in data leakage</li>
+						<li>Submitted manipulated, fraudulent, or misleading results</li>
+						<li>Colluded with other teams to circumvent submission limits or evaluation procedures</li>
+						<li>Failed to disclose external resources used in their method</li>
+						<li>Failed to provide a valid abstract with their submission</li>
+					</ul>
+					<p class="lead" style="text-align:justify">Disqualified teams will be removed from the leaderboard and will not be eligible for awards.</p>
+
+					<h4 class="section-heading">12. Contact</h4>
+					<p class="lead" style="text-align:justify">
+						For questions regarding these guidelines, please contact:<br>
+						Email: <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a>
 					</p>
 					
 				</div>  
 
 				<div class="wow fadeInRightBig" data-animation-delay="200">   
-    <h4 class="section-heading">Important Dates</h4>
+    <!-- <h4 class="section-heading">Important Dates</h4> -->
     <!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
-    <ul class="lead">
+    <!-- <ul class="lead"> -->
 
-        <li>The paper submission deadlins will be announced soon.</li>
+        <!-- <li>The paper submission deadlines will be announced soon.</li> -->
 
 		<!-- <li>Deadline for paper submission: March 9<sup>th</sup>, 2026 &ndash; Anywhere on Earth (AoE)</li>
 
@@ -219,7 +337,7 @@
 
         <li>Camera Ready submission (strict!) deadline: April 5<sup>th</sup>, 2026</li> -->
 
-    </ul>						
+    <!-- </ul>						 -->
 </div>
 
 				
@@ -241,116 +359,67 @@
         <!-- /.container -->
     </div>
 	
-	<!-- Program -->
-    <div id ="program" class="content-section-a">
+	<!-- Important Dates -->
+    <div id ="dates" class="content-section-a">
 
-        <div class="container">				
-                <div class="wow fadeInLeftBig" data-animation-delay="200">   
-                    <h3 class="section-heading">Program</h3>
-                    <p class="lead"  style="text-align:justify;font-size:15px">
-						<!-- <p class="lead"  style="text-align:justify">	
-							<u>Room: 106 B</u> <br>
-						</p> -->
-
-			    <!-- <b> N.B.</b>  Time is CDT (Central Daylight Time); -->
-			    Coming very soon!
-			    <!--
-			    <p class="lead"  style="text-align:justify">  Full recording of the event is available at <u>   <a href="https://www.youtube.com/watch?v=pHuFMcaoLio&ab_channel=MichaelYang" >https://www.youtube.com/watch?v=pHuFMcaoLio&ab_channel=MichaelYang</a>  </u>
-			    </p>
-				-->
-
-					<!-- <p class="lead"  style="text-align:justify">	
-					08:30-08:40 - Welcome from organizers and openings remarks <br>
-					</p>
-					<p class="lead"  style="text-align:justify">
-					08:40-09:20 - Keynote 1 - Elisa Ricci <br>
-					</p>
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-						<u>TITLE</u>: <strong>Toward generalizable Vision-Language Models: Improving fine-grained understanding from limited image samples and synthetic videos</strong><br>
-						 <u>ABSTRACT</u>: Vision-Language Models have shown impressive performance on a wide range of tasks, 
-						 yet their generalization capabilities remain a key challenge especially in fine-grained image and video understanding tasks. 
-						 In this talk, I will present two recent works that explore novel strategies to address this limitation. 
-						 First, I will consider the problem of few-shot adaptation for image recognition. 
-						 I will introduce Two-Stage Few-Shot Adaptation (2SFS), a novel and simple strategy that explicitly separates task-level feature extraction and concept specialization. 
-						 2SFS yields improved generalization capabilities over baselines and consistent gains across multiple datasets, backbones, and settings. 
-						 Second, I will present SynViTA, a novel framework for improving video-language alignment using synthetic videos. 
-						 SynViTA mitigates the noise and the distribution shift in generated video content by weighting samples based on semantic similarity 
-						 and enforcing fine-grained caption consistency, leading to consistent gains on multiple video benchmarks and downstream tasks. 
-					
-					
-					<p class="lead"  style="text-align:justify">
-						09:20-10:00 - Keynote 2 - Shaogang Gong <br>
-					</p>
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-						<u>TITLE</u>: <strong>From Test-Time Inference to Small Data Generative Learning</strong><br>
-						 <u>ABSTRACT</u>: Language Models (VLLM) has revolutionised machine learning in computer vision in
-						 recent years largely due to their capacity for semantic reasoning in supporting visual interpretation in
-						 context. Computer vision fundamentally requires answering two questions of ‘what’ and ‘where/when’.
-						 However, VLLM multimodal foundation models are poor for solving the `where/when’ localisation
-						 problem underpinning object detection, segmentation, video understanding, and generative synthesis
-						 of details due to a lack of fine-grained domain specific knowledge without sufficient target domain
-						 fine-grained training data. Moreover, increasing privacy concerns from data protection and
-						 environmental concerns on energy consumption together with a need for incremental model
-						 expansion in supporting decentralised and distributed user target domains of small data pose
-						 fundamental challenges to the established wisdom for learning of a centralised single model from
-						 exhaustive labelling. In this talk, I will present progress on exploring VLLM for test-time inference
-						 without learning and for small data generative learning, using examples in automatic prompt control in
-						 image segmentation by leveraging (rather than removing) VLLM hallucination for more reliable and
-						 trustworthy semantic segmentation, and diffusion few-shot image generation with artifact detection to
-						 overcome the limitations of LLM.
-					</p>
-
-					<p class="lead"  style="text-align:justify"> 
-					10:00-10:30 - Coffee Break 
-					</p>
-					    
-					<p class="lead"  style="text-align:justify">
-					10:30-11:10 - Keynote 3 - Katerina Fragkiadaki<br>
-					</p>
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-						<u>TITLE</u>: <strong>Unified Vision-Language Generation and 2D/3D Understanding</strong><br>
-						 <u>ABSTRACT</u>: Recent advances in large-scale language modeling have demonstrated significant success across various tasks, 
-						 prompting efforts to extend these capabilities to other modalities, including 2D and 3D vision. 
-						 However, this effort has been met with a variety of challenges due to fundamental differences in data representations, task-specific requirements, 
-						 and the relative scarcity of large, high-quality annotated datasets for modalities beyond text.
-
-
-						 In this work, we present two approaches for solving these challenges. 
-						 First, we explore discrete diffusion models as a unified generative formulation in the joint text and image domain and demonstrate their advantages 
-						 over autoregressive models including improved control over quality versus diversity, joint multimodal inpainting, 
-						 and greater controllability in generation through guidance. Second, we develop a method to jointly train 2D and 3D vision-language models, 
-						 allowing for knowledge transfer from abundant 2D datasets to comparatively limited 3D tasks. 
-						 By employing a shared architecture, this approach significantly improves performance on various 3D vision-language tasks.
-					</p>
-
-					<p class="lead"  style="text-align:justify"> 
-						11:10-11:50 - Keynote 4 - Georgia Gkioxari
-						</p>
-					
-					<p class="lead"  style="text-align:justify">
-					11:50-12:20 - Oral Session <br>
-					</p>
-					<p class="lead" style="text-align:justify;font-size:15px;padding-left: 5em">
-							(ID 01) - <strong>Missing Modality in Multimodal Egocentric Datasets</strong>, <i> Merey Ramazanova et al. </i> (8-min presentation + 2-min Q&A)<br> 
-							(ID 06) - <strong>SplatTouch: Explicit 3D Representation Binding Vision and Touch</strong>, <i> Antonio Luigi Stefani et al. </i> (8-min presentation + 2-min Q&A)<br> 
-							(ID 39) - <strong>LVP-CLIP: Revisiting CLIP for Continual Learning with Label Vector Pool</strong>, <i> Yue Ma et al. </i>  (8-min presentation + 2-min Q&A)<br>  
-						</p>
-	
-					<p class="lead"  style="text-align:justify">
-					12:20-12:30 - Closing Remarks <br>
-					</p>
-					
-					<p class="lead"  style="text-align:justify">
-					14.00-16.00 -  Poster Session  - <u> ExHall D  - poster boards #372 - #388 </u> <br> -->
-					
-					<!-- TBA -  Poster Session (all papers) <u> West Exhibit Hall - poster slots #64 - #83 </u> <br> -->
-					</p>
-
-				</div>
+        <div class="container">
+            <div class="section-header section-header-right">
+                <h3 class="section-heading">Important Dates</h3>
             </div>
-            <div class="container">				
-                <div class="wow fadeInRightBig" data-animation-delay="200">
+
+            <div class="content-block slide-in-bottom">
+                <p style="text-align: center; margin-bottom: var(--spacing-md);">
+                    All deadlines are at 11:59 p.m. <a href="https://www.timeanddate.com/time/zones/aoe" target="_blank">Anywhere on Earth (AoE)</a>.
+                </p>
+
+                <div class="table-responsive">
+                    <table class="dates-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Registration Opens</th>
+                                <td>Apr 3, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Test Data Released; Result Submission Opens</th>
+                                <td>May 8, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Registration Closes</th>
+                                <td>Jun 1, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Result Submission Deadline</th>
+                                <td>Jun 10, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Winners Announced</th>
+                                <td>Jun 15, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Paper Submission Deadline</th>
+                                <td>Jun 25, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Paper Decision</th>
+                                <td>Jul 16, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Camera Ready Deadline</th>
+                                <td>Aug 6, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
+                <p style="font-size: 0.85rem; color: var(--color-muted); text-align: center; margin-top: var(--spacing-md);">
+                    *All dates are AoE (UTC−12), 23:59 of the specified day
+                </p>
             </div>
         </div>
     </div>
