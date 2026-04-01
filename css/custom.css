@@ -244,16 +244,55 @@ padding: 8px 12px;
     color: #fff;
 }
 
-/* ── Guidelines section h4 headings ─────────────────────────── */
-#guidelines h4.section-heading {
-    font-size: 16px;
+/* ── Guideline panels ────────────────────────────────────────── */
+.guideline-panel {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(44, 62, 80, 0.06);
+    border: 1px solid #e8edf2;
+}
+.guideline-panel h4.section-heading {
+    font-size: 17px;
     font-weight: 700;
     color: #2c3e50;
     border-left: 4px solid #4a90be;
     padding-left: 12px;
-    margin-top: 36px;
+    margin-top: 0;
     margin-bottom: 16px;
     letter-spacing: 0.02em;
+}
+.guideline-panel .lead {
+    margin-bottom: 12px;
+}
+.guideline-panel .lead:last-child,
+.guideline-panel ul.lead:last-child,
+.guideline-panel ol.lead:last-child {
+    margin-bottom: 0;
+}
+.guideline-panel .sub-label {
+    display: inline-block;
+    background: #eaf2fb;
+    color: #2c6699;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+}
+
+/* ── Formula highlight box ───────────────────────────────────── */
+.formula-box {
+    background: #eaf2fb;
+    border-left: 4px solid #4a90be;
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin: 12px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
 }
 
 /* ── Inline code styling ─────────────────────────────────────── */
@@ -263,6 +302,82 @@ padding: 8px 12px;
     border-radius: 4px;
     padding: 2px 6px;
     font-size: 13px;
+}
+
+/* ── Organizer cards ─────────────────────────────────────────── */
+.organizer-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 16px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.07);
+    border: 1px solid #e8edf2;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.organizer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.13);
+}
+.organizer-card img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #e8edf2;
+}
+.organizer-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0 0 8px;
+}
+.organizer-card h5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7c93;
+    margin: 0;
+    font-style: italic;
+}
+
+/* ── Sponsor cards ───────────────────────────────────────────── */
+.sponsor-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+.sponsor-card {
+    flex: 1;
+    min-width: 240px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    border: 1px solid #e8edf2;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* ── Contact section (dark background) ───────────────────────── */
+.section-header-light {
+    text-align: left;
+    border-bottom: 3px solid rgba(255,255,255,0.35);
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+}
+
+/* ── Scope intro card ────────────────────────────────────────── */
+.scope-intro {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px 32px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+    border: 1px solid #e8edf2;
+    margin-bottom: 28px;
 }
 
 /* ── Hero download/registration buttons ─────────────────────── */

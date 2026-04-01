@@ -122,15 +122,30 @@
                     <div class="section-header section-header-left">
                         <h3 class="section-heading">TRIDENT: Tri-modal Deepfake Perception, Detection, and Hallucination Grand Challenge</h3>
                     </div>
-                    <p class="lead"  style="text-align:justify">
-						The rapid maturation of generative artificial intelligence has fundamentally altered the digital ecosystem, moving beyond simple image synthesis toward a sophisticated, multi-modal reality. While these advancements drive creative innovation, they have simultaneously given rise to a <i>Synthetic Media Paradox</i>: as deepfakes become visually and acoustically indistinguishable from authentic recordings, our detection systems are becoming increasingly powerful but alarmingly less transparent. In a 2026 landscape, where disinformation campaigns leverage high-fidelity images, temporal video sequences, and cloned audio in tandem, traditional binary detection that labels content as simply Real or Fake is no longer a sufficient defense. The TRIDENT Grand Challenge is born from the urgent need to transition from black-box detection toward a white-box forensic paradigm that prioritizes accountability, interpretability, and explanability <br/><br/>						
-						The foundational philosophy of TRIDENT is rooted in the <i>Forensic Triad</i>: the belief that a trustworthy AI must not only reach the correct binary conclusion but must do so with the correct reasons. Previous challenges often overlook the <i>Interpretability Gap</i>, where models achieve decent accuracy by potentially exploiting dataset biases or non-semantic shortcuts rather than identifying actual generative artifacts, resulting in the <i>Hallucination Delemma</i>, a critical  failure mode where a detector justifies a correct classification through fabricated evidence and points to phantom artifacts that do not exist. In legal, journalistic, or security contexts, such correct but ungrounded decisions are inadmissible and dangerous. TRIDENT mitigates the gap by requiring the model to demonstrate a triad-based Deepfake examination: <br/><br/>
-						<ul class="lead">
-							<li><strong>Perception:</strong> <em>Can the model identify and localize the fine-grained manipulation artifacts across image, video, and audio?</em></li>
-							<li><strong>Detection:</strong> <em>Does the model maintain high classification accuracy across diverse forgery families?</em></li>
-							<li><strong>Hallucination:</strong> <em>Is the model’s explanation grounded in reality, or is it fabricating evidence?</em></li>
-						</ul>
-					</p>
+                    <div class="scope-intro">
+                        <p class="lead" style="text-align:justify">
+						The rapid maturation of generative artificial intelligence has fundamentally altered the digital ecosystem, moving beyond simple image synthesis toward a sophisticated, multi-modal reality. While these advancements drive creative innovation, they have simultaneously given rise to a <i>Synthetic Media Paradox</i>: as deepfakes become visually and acoustically indistinguishable from authentic recordings, our detection systems are becoming increasingly powerful but alarmingly less transparent. In a 2026 landscape, where disinformation campaigns leverage high-fidelity images, temporal video sequences, and cloned audio in tandem, traditional binary detection that labels content as simply Real or Fake is no longer a sufficient defense. The TRIDENT Grand Challenge is born from the urgent need to transition from black-box detection toward a white-box forensic paradigm that prioritizes accountability, interpretability, and explanability
+					    </p>
+                    </div>
+                    <div class="scope-intro">
+                        <p class="lead" style="text-align:justify">
+						The foundational philosophy of TRIDENT is rooted in the <i>Forensic Triad</i>: the belief that a trustworthy AI must not only reach the correct binary conclusion but must do so with the correct reasons. Previous challenges often overlook the <i>Interpretability Gap</i>, where models achieve decent accuracy by potentially exploiting dataset biases or non-semantic shortcuts rather than identifying actual generative artifacts, resulting in the <i>Hallucination Delemma</i>, a critical  failure mode where a detector justifies a correct classification through fabricated evidence and points to phantom artifacts that do not exist. In legal, journalistic, or security contexts, such correct but ungrounded decisions are inadmissible and dangerous. TRIDENT mitigates the gap by requiring the model to demonstrate a triad-based Deepfake examination:
+					    </p>
+                    </div>
+					<div class="task-card-row">
+						<div class="task-card">
+							<h5 class="task-card-title">Perception</h5>
+							<p class="task-card-body"><em>Can the model identify and localize the fine-grained manipulation artifacts across image, video, and audio?</em></p>
+						</div>
+						<div class="task-card">
+							<h5 class="task-card-title">Detection</h5>
+							<p class="task-card-body"><em>Does the model maintain high classification accuracy across diverse forgery families?</em></p>
+						</div>
+						<div class="task-card">
+							<h5 class="task-card-title">Hallucination</h5>
+							<p class="task-card-body"><em>Is the model’s explanation grounded in reality, or is it fabricating evidence?</em></p>
+						</div>
+					</div>
 				</div>   
             </div>
         </div>
@@ -147,152 +162,184 @@
                     <div class="section-header section-header-left">
                         <h3 class="section-heading">Participation Guidelines</h3>
                     </div>
-					<h4 class="section-heading">1. Overview</h4>
-					<p class="lead" style="text-align:justify">
-						The TRIDENT Challenge 2026 is an ACM MM 2026 Grand Challenge on tri-modal deepfake perception, detection, and hallucination analysis. Participants are invited to compete across three independent tracks: Image, Video, and Audio, using the TRIDENT dataset. These guidelines govern all aspects of participation, from eligibility to submission and evaluation.
-					</p>
+					<div class="guideline-panel">
+						<h4 class="section-heading">1. Overview</h4>
+						<p class="lead" style="text-align:justify">
+							The TRIDENT Challenge 2026 is an ACM MM 2026 Grand Challenge on tri-modal deepfake perception, detection, and hallucination analysis. Participants are invited to compete across three independent tracks: Image, Video, and Audio, using the TRIDENT dataset. These guidelines govern all aspects of participation, from eligibility to submission and evaluation.
+						</p>
+					</div>
 
-					<h4 class="section-heading">2. Eligibility</h4>
-					<p class="lead" style="text-align:justify">Participation is open to any research team worldwide, subject to the following conditions:</p>
-					<ul class="lead">
-						<li>Each team must have a responsible team leader who is a faculty member, researcher, or staff member with formal affiliation. The team leader is responsible for the team's compliance with these guidelines and the TRIDENT End User License Agreement (EULA).</li>
-						<li>Students may participate as team members but may not serve as the team leader unless otherwise approved by the organizers.</li>
-						<li>Each participant may only be a member of one team per track.</li>
-						<li>Teams must register via the official registration form and receive approval from the organizers before accessing the dataset. Participation prior to approval is not permitted.</li>
-					</ul>
+					<div class="guideline-panel">
+						<h4 class="section-heading">2. Eligibility</h4>
+						<p class="lead" style="text-align:justify">Participation is open to any research team worldwide, subject to the following conditions:</p>
+						<ul class="lead">
+							<li>Each team must have a responsible team leader who is a faculty member, researcher, or staff member with formal affiliation. The team leader is responsible for the team's compliance with these guidelines and the TRIDENT End User License Agreement (EULA).</li>
+							<li>Students may participate as team members but may not serve as the team leader unless otherwise approved by the organizers.</li>
+							<li>Each participant may only be a member of one team per track.</li>
+							<li>Teams must register via the official registration form and receive approval from the organizers before accessing the dataset. Participation prior to approval is not permitted.</li>
+						</ul>
+					</div>
 
-					<h4 class="section-heading">3. Tracks</h4>
-					<p class="lead" style="text-align:justify">Participants may enter one or more of the following tracks:</p>
-					<ul class="lead">
-						<li>Image Track</li>
-						<li>Video Track</li>
-						<li>Audio Track</li>
-					</ul>
-					<p class="lead" style="text-align:justify">Each track includes the following task types:</p>
-					<div class="task-card-row">
-						<div class="task-card">
-							<h5 class="task-card-title">Structured VQA</h5>
-							<p class="task-card-body">Participants must answer True/False Questions (TFQ) and Multiple-Choice Questions (MCQ). Required outputs are "True" or "False" for TFQ, and the selected option label for MCQ.</p>
-						</div>
-						<div class="task-card">
-							<h5 class="task-card-title">Type-A Open-Ended Questions</h5>
-							<p class="task-card-body">Given that the sample is known to be manipulated, the model must provide a structured description of observable artifacts and manipulation evidence.</p>
-						</div>
-						<div class="task-card">
-							<h5 class="task-card-title">Type-B Open-Ended Questions</h5>
-							<p class="task-card-body">Given a sample of unknown authenticity, the model must provide an authenticity label ("Likely Authentic" or "Likely Manipulated") and a short reasoning paragraph supporting the decision.</p>
+					<div class="guideline-panel">
+						<h4 class="section-heading">3. Tracks</h4>
+						<p class="lead" style="text-align:justify">Participants may enter one or more of the following tracks:</p>
+						<ul class="lead">
+							<li>Image Track</li>
+							<li>Video Track</li>
+							<li>Audio Track</li>
+						</ul>
+						<p class="lead" style="text-align:justify">Each track includes the following task types:</p>
+						<div class="task-card-row">
+							<div class="task-card">
+								<h5 class="task-card-title">Structured VQA</h5>
+								<p class="task-card-body">Participants must answer True/False Questions (TFQ) and Multiple-Choice Questions (MCQ). Required outputs are "True" or "False" for TFQ, and the selected option label for MCQ.</p>
+							</div>
+							<div class="task-card">
+								<h5 class="task-card-title">Type-A Open-Ended Questions</h5>
+								<p class="task-card-body">Given that the sample is known to be manipulated, the model must provide a structured description of observable artifacts and manipulation evidence.</p>
+							</div>
+							<div class="task-card">
+								<h5 class="task-card-title">Type-B Open-Ended Questions</h5>
+								<p class="task-card-body">Given a sample of unknown authenticity, the model must provide an authenticity label ("Likely Authentic" or "Likely Manipulated") and a short reasoning paragraph supporting the decision.</p>
+							</div>
 						</div>
 					</div>
 
-					<h4 class="section-heading">4. Challenge Phases</h4>
-					<p class="lead" style="text-align:justify"><strong>4.1 Phase 1 – Training and Validation Data Released</strong><br>
-						The organizers will release the Training Set and the Validation Set. These datasets are provided for model training, method development, and local evaluation. No official leaderboard will be provided during this phase.
-					</p>
-					<p class="lead" style="text-align:justify"><strong>4.2 Phase 2 – Testing Data Released; Submission Start</strong><br>
-						The organizers will release the Test Set (without ground-truth labels). Participants must run inference on the test set and submit their predictions through the official competition platform.
-					</p>
-
-					<h4 class="section-heading">5. Submission</h4>
-					<p class="lead" style="text-align:justify"><strong>5.1 Platform</strong><br>
-						All submissions must be made through the official Codabench competition page. Links to each track's competition page will be provided upon dataset access approval. A starter kit will be provided after registration is validated, containing submission format examples and instructions to help participants get started.
-					</p>
-					<p class="lead" style="text-align:justify"><strong>5.2 Submission Limits</strong><br>
-						Each team is allowed a maximum of 3 submissions per day per track. Submissions exceeding this limit will be automatically rejected by the platform.
-					</p>
-					<p class="lead" style="text-align:justify"><strong>5.3 File Format</strong><br>
-						Submissions must be in JSON format. Files must follow the naming convention: <code>{teamname}_{track}.json</code><br>
-						For example: TeamAlpha_image.json, TeamA_video.json, TeamA_audio.json.<br>
-						Only submissions that pass automatic format validation will be counted as valid. Invalid submissions will not appear on the leaderboard and will count toward the daily limit.
-					</p>
-					<p class="lead" style="text-align:justify"><strong>5.4 Abstract Requirement</strong><br>
-						Each submission must be accompanied by a 1–2 page abstract describing the team's method. The abstract must be submitted as a PDF file named <code>{teamname}_abstract.pdf</code> and sent to <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a> before or alongside your final submission on Codabench. Submissions without a valid abstract will appear on the public leaderboard but will not be considered for the final award decision.
-					</p>
-
-					<h4 class="section-heading">6. Evaluation Criteria and Metrics</h4>
-					<p class="lead" style="text-align:justify"><strong>6.1 Evaluation Dimensions</strong><br>
-						Each track is evaluated across three dimensions:
-					</p>
-					<div class="task-card-row">
-						<div class="task-card">
-							<h5 class="task-card-title">Detection</h5>
-							<p class="task-card-body">Binary classification performance distinguishing real from fake content.</p>
-						</div>
-						<div class="task-card">
-							<h5 class="task-card-title">Perception</h5>
-							<p class="task-card-body">Fine-grained identification of manipulation artifacts using human-annotated evidence.</p>
-						</div>
-						<div class="task-card">
-							<h5 class="task-card-title">Hallucination Robustness</h5>
-							<p class="task-card-body">Reliability of model reasoning and resistance to producing incorrect or unsupported predictions.</p>
+					<div class="guideline-panel">
+						<h4 class="section-heading">4. Challenge Phases</h4>
+						<div class="task-card-row">
+							<div class="task-card">
+								<h5 class="task-card-title">Phase 1 &ndash; Training and Validation Data Released</h5>
+								<p class="task-card-body">The organizers will release the Training Set and the Validation Set. These datasets are provided for model training, method development, and local evaluation. No official leaderboard will be provided during this phase.</p>
+							</div>
+							<div class="task-card">
+								<h5 class="task-card-title">Phase 2 &ndash; Testing Data Released; Submission Start</h5>
+								<p class="task-card-body">The organizers will release the Test Set (without ground-truth labels). Participants must run inference on the test set and submit their predictions through the official competition platform.</p>
+							</div>
 						</div>
 					</div>
-					<p class="lead" style="text-align:justify"><strong>6.2 Official Ranking Metric</strong><br>
-						The official ranking metric is the Tri-Metric Composite Score (TCS), defined as:<br>
-						<strong>TCS = 0.4 &times; Detection + 0.3 &times; Hallucination Robustness + 0.3 &times; Perception</strong><br>
-						Teams are ranked by their TCS score in descending order within each track.
-					</p>
-					<p class="lead" style="text-align:justify"><strong>6.3 Tie-Breaking</strong><br>
-						In the event of a tie in TCS, rankings will be determined in the following order:
-					</p>
-					<ol class="lead">
-						<li>Higher Detection score</li>
-						<li>Higher Hallucination Robustness score</li>
-						<li>Higher Perception score</li>
-					</ol>
 
-					<h4 class="section-heading">7. External Data and Models</h4>
-					<p class="lead" style="text-align:justify"><strong>7.1 Permitted Resources</strong><br>
-						The use of external resources is permitted, including: external datasets, pretrained models, foundation models, large language models (LLMs) and multimodal large language models (MLLMs), and other publicly available resources. All external resources used must be clearly disclosed in the submitted abstract and method description.
-					</p>
-					<p class="lead" style="text-align:justify"><strong>7.2 Prohibited Practices</strong><br>
-						The following are strictly prohibited:
-					</p>
-					<ul class="lead">
-						<li>Use of test set labels or private annotations</li>
-						<li>Any form of data leakage from the test set</li>
-						<li>Any attempt to reconstruct or infer hidden ground truth</li>
-						<li>Use of any resources not disclosed in the method description</li>
-					</ul>
+					<div class="guideline-panel">
+						<h4 class="section-heading">5. Submission</h4>
+						<p class="lead" style="text-align:justify"><span class="sub-label">5.1 Platform</span><br>
+							All submissions must be made through the official Codabench competition page. Links to each track's competition page will be provided upon dataset access approval. A starter kit will be provided after registration is validated, containing submission format examples and instructions to help participants get started.
+						</p>
+						<p class="lead" style="text-align:justify"><span class="sub-label">5.2 Submission Limits</span><br>
+							Each team is allowed a maximum of 3 submissions per day per track. Submissions exceeding this limit will be automatically rejected by the platform.
+						</p>
+						<p class="lead" style="text-align:justify"><span class="sub-label">5.3 File Format</span><br>
+							Submissions must be in JSON format. Files must follow the naming convention: <code>{teamname}_{track}.json</code><br>
+							For example: TeamAlpha_image.json, TeamA_video.json, TeamA_audio.json.<br>
+							Only submissions that pass automatic format validation will be counted as valid. Invalid submissions will not appear on the leaderboard and will count toward the daily limit.
+						</p>
+						<p class="lead" style="text-align:justify"><span class="sub-label">5.4 Abstract Requirement</span><br>
+							Each submission must be accompanied by a 1–2 page abstract describing the team's method. The abstract must be submitted as a PDF file named <code>{teamname}_abstract.pdf</code> and sent to <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a> before or alongside your final submission on Codabench. Submissions without a valid abstract will appear on the public leaderboard but will not be considered for the final award decision.
+						</p>
+					</div>
 
-					<h4 class="section-heading">8. Leaderboard</h4>
-					<ul class="lead">
-						<li>A public leaderboard will be maintained on Codabench throughout the submission period, updated automatically after each validated submission.</li>
-						<li>The leaderboard displays TCS scores for each track independently.</li>
-						<li>The final leaderboard is determined at the close of the submission period (June 10, 2026). Results submitted after the deadline will not be considered.</li>
-						<li>The organizers reserve the right to verify the top-ranked submissions before confirming final results. Winners will be announced on June 15, 2026.</li>
-						<li>If a participant believes there is a scoring error or evaluation issue, they may flag the concern by emailing <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a> before the final results are announced on June 15, 2026.</li>
-					</ul>
+					<div class="guideline-panel">
+						<h4 class="section-heading">6. Evaluation Criteria and Metrics</h4>
+						<p class="lead" style="text-align:justify"><span class="sub-label">6.1 Evaluation Dimensions</span><br>
+							Each track is evaluated across three dimensions:
+						</p>
+						<div class="task-card-row">
+							<div class="task-card">
+								<h5 class="task-card-title">Detection</h5>
+								<p class="task-card-body">Binary classification performance distinguishing real from fake content.</p>
+							</div>
+							<div class="task-card">
+								<h5 class="task-card-title">Perception</h5>
+								<p class="task-card-body">Fine-grained identification of manipulation artifacts using human-annotated evidence.</p>
+							</div>
+							<div class="task-card">
+								<h5 class="task-card-title">Hallucination Robustness</h5>
+								<p class="task-card-body">Reliability of model reasoning and resistance to producing incorrect or unsupported predictions.</p>
+							</div>
+						</div>
+						<p class="lead" style="text-align:justify"><span class="sub-label">6.2 Official Ranking Metric</span><br>
+							The official ranking metric is the Tri-Metric Composite Score (TCS), defined as:
+						</p>
+						<div class="formula-box">
+							TCS = 0.4 &times; Detection + 0.3 &times; Hallucination Robustness + 0.3 &times; Perception
+						</div>
+						<p class="lead" style="text-align:justify">
+							Teams are ranked by their TCS score in descending order within each track.
+						</p>
+						<p class="lead" style="text-align:justify"><span class="sub-label">6.3 Tie-Breaking</span><br>
+							In the event of a tie in TCS, rankings will be determined in the following order:
+						</p>
+						<ol class="lead">
+							<li>Higher Detection score</li>
+							<li>Higher Hallucination Robustness score</li>
+							<li>Higher Perception score</li>
+						</ol>
+					</div>
 
-					<h4 class="section-heading">9. Code and Model Release</h4>
-					<p class="lead" style="text-align:justify">
-						Winners are strongly encouraged to release their code and model weights to support reproducibility and benefit the research community. While release is not mandatory, teams that do so will be acknowledged in the official challenge report. All participants are required to retain their code and model weights for at least 30 days after the results announcement. Winners will be asked to provide their code to the organizers for validation purposes.
-					</p>
+					<div class="guideline-panel">
+						<h4 class="section-heading">7. External Data and Models</h4>
+						<p class="lead" style="text-align:justify"><span class="sub-label">7.1 Permitted Resources</span><br>
+							The use of external resources is permitted, including: external datasets, pretrained models, foundation models, large language models (LLMs) and multimodal large language models (MLLMs), and other publicly available resources. All external resources used must be clearly disclosed in the submitted abstract and method description.
+						</p>
+						<p class="lead" style="text-align:justify"><span class="sub-label">7.2 Prohibited Practices</span><br>
+							The following are strictly prohibited:
+						</p>
+						<ul class="lead">
+							<li>Use of test set labels or private annotations</li>
+							<li>Any form of data leakage from the test set</li>
+							<li>Any attempt to reconstruct or infer hidden ground truth</li>
+							<li>Use of any resources not disclosed in the method description</li>
+						</ul>
+					</div>
 
-					<h4 class="section-heading">10. Awards and Recognition</h4>
-					<ul class="lead">
-						<li>One winner will be selected per track (Image, Video, Audio) based on the final TCS ranking.</li>
-						<li>Each winning team will be invited to submit a paper describing their method to the ACM MM 2026 main conference.</li>
-						<li>Acceptance of the invited paper is subject to review by the challenge organizers. The organizers do not guarantee acceptance.</li>
-						<li>At least one full registration to ACM MM 2026 is required for the paper to be published in the proceedings.</li>
-					</ul>
+					<div class="guideline-panel">
+						<h4 class="section-heading">8. Leaderboard</h4>
+						<ul class="lead">
+							<li>A public leaderboard will be maintained on Codabench throughout the submission period, updated automatically after each validated submission.</li>
+							<li>The leaderboard displays TCS scores for each track independently.</li>
+							<li>The final leaderboard is determined at the close of the submission period (June 10, 2026). Results submitted after the deadline will not be considered.</li>
+							<li>The organizers reserve the right to verify the top-ranked submissions before confirming final results. Winners will be announced on June 15, 2026.</li>
+							<li>If a participant believes there is a scoring error or evaluation issue, they may flag the concern by emailing <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a> before the final results are announced on June 15, 2026.</li>
+						</ul>
+					</div>
 
-					<h4 class="section-heading">11. Disqualification</h4>
-					<p class="lead" style="text-align:justify">The organizers reserve the right to disqualify any team found to have:</p>
-					<ul class="lead">
-						<li>Violated these Participation Guidelines or the TRIDENT EULA</li>
-						<li>Used prohibited resources or engaged in data leakage</li>
-						<li>Submitted manipulated, fraudulent, or misleading results</li>
-						<li>Colluded with other teams to circumvent submission limits or evaluation procedures</li>
-						<li>Failed to disclose external resources used in their method</li>
-						<li>Failed to provide a valid abstract with their submission</li>
-					</ul>
-					<p class="lead" style="text-align:justify">Disqualified teams will be removed from the leaderboard and will not be eligible for awards.</p>
+					<div class="guideline-panel">
+						<h4 class="section-heading">9. Code and Model Release</h4>
+						<p class="lead" style="text-align:justify">
+							Winners are strongly encouraged to release their code and model weights to support reproducibility and benefit the research community. While release is not mandatory, teams that do so will be acknowledged in the official challenge report. All participants are required to retain their code and model weights for at least 30 days after the results announcement. Winners will be asked to provide their code to the organizers for validation purposes.
+						</p>
+					</div>
 
-					<h4 class="section-heading">12. Contact</h4>
-					<p class="lead" style="text-align:justify">
-						For questions regarding these guidelines, please contact:<br>
-						Email: <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a>
-					</p>
+					<div class="guideline-panel">
+						<h4 class="section-heading">10. Awards and Recognition</h4>
+						<ul class="lead">
+							<li>One winner will be selected per track (Image, Video, Audio) based on the final TCS ranking.</li>
+							<li>Each winning team will be invited to submit a paper describing their method to the ACM MM 2026 main conference.</li>
+							<li>Acceptance of the invited paper is subject to review by the challenge organizers. The organizers do not guarantee acceptance.</li>
+							<li>At least one full registration to ACM MM 2026 is required for the paper to be published in the proceedings.</li>
+						</ul>
+					</div>
+
+					<div class="guideline-panel">
+						<h4 class="section-heading">11. Disqualification</h4>
+						<p class="lead" style="text-align:justify">The organizers reserve the right to disqualify any team found to have:</p>
+						<ul class="lead">
+							<li>Violated these Participation Guidelines or the TRIDENT EULA</li>
+							<li>Used prohibited resources or engaged in data leakage</li>
+							<li>Submitted manipulated, fraudulent, or misleading results</li>
+							<li>Colluded with other teams to circumvent submission limits or evaluation procedures</li>
+							<li>Failed to disclose external resources used in their method</li>
+							<li>Failed to provide a valid abstract with their submission</li>
+						</ul>
+						<p class="lead" style="text-align:justify">Disqualified teams will be removed from the leaderboard and will not be eligible for awards.</p>
+					</div>
+
+					<div class="guideline-panel">
+						<h4 class="section-heading">12. Contact</h4>
+						<p class="lead" style="text-align:justify">
+							For questions regarding these guidelines, please contact:<br>
+							Email: <a href="mailto:trident.at.mm26.mgc@gmail.com">trident.at.mm26.mgc@gmail.com</a>
+						</p>
+					</div>
 					
 				</div>  
 
@@ -390,67 +437,73 @@
 
 	
 	<!-- Organizers -->
-    <div id="organizers" class="content-section-a"> 
+    <div id="organizers" class="content-section-b"> 
 		
 		<div class="container">
-		        <div class="row wow fadeInRightBig"  data-animation-delay="200">
-                <div class="section-header section-header-left">
-                    <h3 class="section-heading">Organizers</h3>
-                </div>
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="">   
-					<h4 class="section-heading"><center>Wen-Huang Cheng</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/whc.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>National Taiwan University, Taiwan</i></center></h5>
-				</div>
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Hong-Han Shuai</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/hhshuai.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>National Yang Ming Chiao Tung University, Taiwan</i></center></h5>
-				</div>
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Khoa D. Doan</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/khoa.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>VinUniversity, Vietnam</i></center></h5>
-				</div> 
-				
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Hongxia Xie</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/hxx.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>Jilin University, China</i></center></h5>
-				</div>
-				
-				</div>
-				
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Ling Lo</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/Lynn.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>National Yang Ming Chiao Tung University, Taiwan</i></center></h5>
-				</div>
-
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Jian-Yu Jiang-Lin</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/jy.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>National Taiwan University, Taiwan</i></center></h5>
-				</div>
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Kang-Yang Huang</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/ky.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>National Taiwan University, Taiwan</i></center></h5>
-				</div> 
-
-				<div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">   
-					<h4 class="section-heading"><center>Ling Zou</center></h4>
-					<center><img  class="img-responsive img-rounded" style="border-radius: 50%" height="200" width="200" src="img/organizer/Ling.jpg" alt=""></center>
-					<h5 class="section-heading"><center><i>National Taiwan University, Taiwan</i></center></h5>
-				</div> 
-
+			<div class="section-header section-header-left">
+				<h3 class="section-heading">Organizers</h3>
 			</div>
-        </div>
+			<div class="row">
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="0">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/whc.jpg" alt="Wen-Huang Cheng">
+						<h4>Wen-Huang Cheng</h4>
+						<h5>National Taiwan University</h5>
+					</div>
+				</div>
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="100">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/hhshuai.jpg" alt="Hong-Han Shuai">
+						<h4>Hong-Han Shuai</h4>
+						<h5>National Yang Ming Chiao Tung University</h5>
+					</div>
+				</div>
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/khoa.jpg" alt="Khoa D. Doan">
+						<h4>Khoa D. Doan</h4>
+						<h5>VinUniversity</h5>
+					</div>
+				</div>
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="300">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/hxx.jpg" alt="Hongxia Xie">
+						<h4>Hongxia Xie</h4>
+						<h5>Jilin University</h5>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="0">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/Lynn.jpg" alt="Ling Lo">
+						<h4>Ling Lo</h4>
+						<h5>National Yang Ming Chiao Tung University</h5>
+					</div>
+				</div>
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="100">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/jy.jpg" alt="Jian-Yu Jiang-Lin">
+						<h4>Jian-Yu Jiang-Lin</h4>
+						<h5>National Taiwan University</h5>
+					</div>
+				</div>
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/ky.jpg" alt="Kang-Yang Huang">
+						<h4>Kang-Yang Huang</h4>
+						<h5>National Taiwan University</h5>
+					</div>
+				</div>
+				<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="300">
+					<div class="organizer-card">
+						<img class="img-responsive" src="img/organizer/Ling.jpg" alt="Ling Zou">
+						<h4>Ling Zou</h4>
+						<h5>National Taiwan University</h5>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
 	<!-- Program Committee -->
@@ -464,11 +517,14 @@
                     <div class="section-header section-header-left">
                         <h3 class="section-heading">Sponsors</h3>
                     </div>
-					<p class="lead"  style="text-align:justify">
-						Artificial Intelligence Center of Research Excellence, National Taiwan University (NTU AI-CoRE) <br/><br/>
-						NVIDIA Academic Grant Program
-
-					</p>
+					<div class="sponsor-row">
+						<div class="sponsor-card">
+							Artificial Intelligence Center of Research Excellence, National Taiwan University (NTU AI-CoRE)
+						</div>
+						<div class="sponsor-card">
+							NVIDIA Academic Grant Program
+						</div>
+					</div>
 				</div>   
             </div>
         </div>
@@ -476,28 +532,17 @@
     </div>
 
 	<div id="contacts" class="content-section-c ">
-			 <!-- Contacts -->
 		<div class="container">
 			<div class="row">
-                <div class="wow fadeInLeftBig" data-animation-delay="200">   
-                    <h3 class="section-heading" style="color:white">Contacts</h3>
-                    <p class="lead"  style="text-align:left;color:white">
-						For additional info please contact us <u><a style="color:white" href="mailto:trident.at.mm26.mgc@gmail.com">here</a></u> 
+                <div class="wow fadeInLeftBig" data-animation-delay="200">
+                    <div class="section-header section-header-light">
+                        <h3 class="section-heading" style="color:white">Contacts</h3>
+                    </div>
+                    <p class="lead" style="text-align:left;color:white">
+						For additional info please contact us <u><a style="color:white" href="mailto:trident.at.mm26.mgc@gmail.com">here</a></u>
 					</p>
-					
-				</div>   				
+				</div>
             </div>
-			<div class="row">
-			
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<div >
-									<div class="morph-button ">
-										<button type="button"></button>
-										
-									</div>
-							</div>
-						</div>	
-			</div>
 		</div>
 	</div>	
 
