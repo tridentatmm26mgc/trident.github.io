@@ -215,11 +215,20 @@
 						<li>Audio Track</li>
 					</ul>
 					<p class="lead" style="text-align:justify">Each track includes the following task types:</p>
-					<ul class="lead">
-						<li><strong>Structured VQA.</strong> Participants must answer True/False Questions (TFQ) and Multiple-Choice Questions (MCQ). Required outputs are "True" or "False" for TFQ, and the selected option label for MCQ.</li>
-						<li><strong>Type-A Open-Ended Questions.</strong> Given that the sample is known to be manipulated, the model must provide a structured description of observable artifacts and manipulation evidence.</li>
-						<li><strong>Type-B Open-Ended Questions.</strong> Given a sample of unknown authenticity, the model must provide an authenticity label ("Likely Authentic" or "Likely Manipulated") and a short reasoning paragraph supporting the decision.</li>
-					</ul>
+					<div class="task-card-row">
+						<div class="task-card">
+							<h5 class="task-card-title">Structured VQA</h5>
+							<p class="task-card-body">Participants must answer True/False Questions (TFQ) and Multiple-Choice Questions (MCQ). Required outputs are "True" or "False" for TFQ, and the selected option label for MCQ.</p>
+						</div>
+						<div class="task-card">
+							<h5 class="task-card-title">Type-A Open-Ended Questions</h5>
+							<p class="task-card-body">Given that the sample is known to be manipulated, the model must provide a structured description of observable artifacts and manipulation evidence.</p>
+						</div>
+						<div class="task-card">
+							<h5 class="task-card-title">Type-B Open-Ended Questions</h5>
+							<p class="task-card-body">Given a sample of unknown authenticity, the model must provide an authenticity label ("Likely Authentic" or "Likely Manipulated") and a short reasoning paragraph supporting the decision.</p>
+						</div>
+					</div>
 
 					<h4 class="section-heading">4. Challenge Phases</h4>
 					<p class="lead" style="text-align:justify"><strong>4.1 Phase 1 – Training and Validation Data Released</strong><br>

@@ -102,6 +102,45 @@ pre.pre-show{
 padding: 8px 12px;
 }
 
+/* Task Type Cards */
+.task-card-row {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.task-card {
+    flex: 1;
+    padding: 24px 20px;
+    border: 2px solid #d0d8e4;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    cursor: default;
+}
+.task-card:hover {
+    border-color: #4a90be;
+    box-shadow: 0 4px 18px rgba(74, 144, 190, 0.18);
+}
+.task-card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.task-card-body {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.65;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .task-card-row {
+        flex-direction: column;
+    }
+}
+
 /* Important Dates Table */
 .dates-table {
     width: 100%;
