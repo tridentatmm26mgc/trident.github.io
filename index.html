@@ -400,40 +400,49 @@
                             <tr>
                                 <th>Event</th>
                                 <th>Date</th>
+                                <th>Countdown</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">Registration Opens</th>
                                 <td>Apr 3, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-04-04T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Test Data Released; Result Submission Opens</th>
                                 <td>May 8, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-05-09T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Registration Closes</th>
                                 <td>Jun 1, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-06-02T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Result Submission Deadline</th>
                                 <td>Jun 10, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-06-11T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Winners Announced</th>
                                 <td>Jun 15, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-06-16T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Paper Submission Deadline</th>
                                 <td>Jun 25, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-06-26T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Paper Decision</th>
                                 <td>Jul 16, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-07-17T11:59:00Z"></span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Camera Ready Deadline</th>
                                 <td>Aug 6, 2026</td>
+                                <td><span class="countdown" data-deadline="2026-08-07T11:59:00Z"></span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -854,7 +863,32 @@
 	<script src="js/classie.js"></script>
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.js"></script> 
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- Countdown timers -->
+	<script>
+	(function() {
+		function updateCountdowns() {
+			var spans = document.querySelectorAll('.countdown[data-deadline]');
+			var now = Date.now();
+			spans.forEach(function(el) {
+				var deadline = new Date(el.getAttribute('data-deadline')).getTime();
+				var diff = deadline - now;
+				if (diff <= 0) {
+					el.textContent = 'Passed';
+					el.style.color = '#999';
+					return;
+				}
+				var d = Math.floor(diff / 86400000);
+				var h = Math.floor((diff % 86400000) / 3600000);
+				var m = Math.floor((diff % 3600000) / 60000);
+				var s = Math.floor((diff % 60000) / 1000);
+				el.textContent = d + 'd ' + h + 'h ' + m + 'm ' + s + 's';
+			});
+		}
+		updateCountdowns();
+		setInterval(updateCountdowns, 1000);
+	})();
+	</script>
 </body>
 
 </html>
