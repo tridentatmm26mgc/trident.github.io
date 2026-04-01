@@ -141,37 +141,138 @@ padding: 8px 12px;
     }
 }
 
-/* Important Dates Table */
+/* ── Section header (Important Dates) ────────────────────────── */
+.section-header {
+    margin-bottom: 32px;
+}
+.section-header-right {
+    text-align: right;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 12px;
+}
+.content-block {
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px 36px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+}
+.slide-in-bottom {
+    animation: slideInBottom 0.5s ease both;
+}
+@keyframes slideInBottom {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Important Dates Table ───────────────────────────────────── */
 .dates-table {
     width: 100%;
-    max-width: 700px;
+    max-width: 860px;
     margin: 0 auto;
     border-collapse: collapse;
     font-size: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(44,62,80,0.08);
 }
 .dates-table thead th {
     background-color: #2c3e50;
     color: #fff;
-    padding: 12px 20px;
+    padding: 14px 20px;
     text-align: left;
     font-weight: 600;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.dates-table thead th:last-child {
+    text-align: center;
 }
 .dates-table tbody tr {
     border-bottom: 1px solid #e0e6ed;
+    transition: background 0.15s ease;
+}
+.dates-table tbody tr:last-child {
+    border-bottom: none;
 }
 .dates-table tbody tr:nth-child(even) {
     background-color: #f4f7fa;
 }
+.dates-table tbody tr:hover {
+    background-color: #eaf2fb;
+}
 .dates-table tbody th,
 .dates-table tbody td {
-    padding: 12px 20px;
+    padding: 13px 20px;
     vertical-align: middle;
+}
+.dates-table tbody th {
+    font-weight: 500;
+    color: #34495e;
 }
 .dates-table tbody td {
     white-space: nowrap;
     color: #2c3e50;
-    font-weight: 500;
+    font-weight: 600;
+}
+.dates-table tbody td:last-child {
+    text-align: center;
+}
+
+/* ── Countdown badge ─────────────────────────────────────────── */
+.countdown {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background: #4a90be;
+    border-radius: 20px;
+    padding: 3px 12px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
+}
+.countdown.countdown-passed {
+    background: #bdc3c7;
+    color: #fff;
+}
+
+/* ── Guidelines section h4 headings ─────────────────────────── */
+#guidelines h4.section-heading {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c3e50;
+    border-left: 4px solid #4a90be;
+    padding-left: 12px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+}
+
+/* ── Inline code styling ─────────────────────────────────────── */
+#guidelines code {
+    background: #eaf2fb;
+    color: #2c6699;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+
+/* ── Hero download/registration buttons ─────────────────────── */
+.mybutton_standard {
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.mybutton_standard:hover {
+    background: #fff;
+    color: #2c3e50 !important;
+}
+.mybutton_cyano:hover {
+    color: #4A90BE !important;
 }
 
 .wrap_title{margin-bottom: 30px;}
