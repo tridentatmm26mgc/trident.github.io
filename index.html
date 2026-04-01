@@ -258,11 +258,20 @@
 					<p class="lead" style="text-align:justify"><strong>6.1 Evaluation Dimensions</strong><br>
 						Each track is evaluated across three dimensions:
 					</p>
-					<ul class="lead">
-						<li><strong>Detection:</strong> Binary classification performance distinguishing real from fake content.</li>
-						<li><strong>Perception:</strong> Fine-grained identification of manipulation artifacts using human-annotated evidence.</li>
-						<li><strong>Hallucination Robustness:</strong> Reliability of model reasoning and resistance to producing incorrect or unsupported predictions.</li>
-					</ul>
+					<div class="task-card-row">
+						<div class="task-card">
+							<h5 class="task-card-title">Detection</h5>
+							<p class="task-card-body">Binary classification performance distinguishing real from fake content.</p>
+						</div>
+						<div class="task-card">
+							<h5 class="task-card-title">Perception</h5>
+							<p class="task-card-body">Fine-grained identification of manipulation artifacts using human-annotated evidence.</p>
+						</div>
+						<div class="task-card">
+							<h5 class="task-card-title">Hallucination Robustness</h5>
+							<p class="task-card-body">Reliability of model reasoning and resistance to producing incorrect or unsupported predictions.</p>
+						</div>
+					</div>
 					<p class="lead" style="text-align:justify"><strong>6.2 Official Ranking Metric</strong><br>
 						The official ranking metric is the Tri-Metric Composite Score (TCS), defined as:<br>
 						<strong>TCS = 0.4 &times; Detection + 0.3 &times; Hallucination Robustness + 0.3 &times; Perception</strong><br>
