@@ -150,6 +150,11 @@ padding: 8px 12px;
     border-bottom: 3px solid #2c3e50;
     padding-bottom: 12px;
 }
+.section-header-left {
+    text-align: left;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 12px;
+}
 .content-block {
     background: #fff;
     border-radius: 10px;
