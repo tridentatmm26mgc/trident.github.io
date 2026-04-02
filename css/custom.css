@@ -244,6 +244,47 @@ padding: 8px 12px;
     color: #fff;
 }
 
+/* ── Procedure steps ─────────────────────────────────────────── */
+.procedure-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+}
+.procedure-step-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #4a90be;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.procedure-step-body {
+    flex: 1;
+}
+.procedure-step-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0 0 8px;
+}
+.procedure-step-desc {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.65;
+    margin: 0;
+}
+.procedure-divider {
+    border-top: 1px solid #e8edf2;
+    margin: 0;
+}
+
 /* ── Guideline panels ────────────────────────────────────────── */
 .guideline-panel {
     background: #fff;
