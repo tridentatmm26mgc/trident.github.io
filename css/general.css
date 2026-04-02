@@ -216,16 +216,21 @@ background: #1abc9c !important;
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #ffffff;
+color: #2c3e50;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-color: #ECEBEB;
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+color: #4a90be;
+background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li.active>a {
-color: #ECEBEB;
-border-bottom: 2px solid #ECEBEB;
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:hover,
+.navbar-default .navbar-nav>li.active>a:focus {
+color: #2c3e50;
+background-color: transparent;
+border-bottom: 2px solid #2c3e50;
 }
 
 .navbar-default .navbar-brand {

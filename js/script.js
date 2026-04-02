@@ -69,6 +69,7 @@ $(document).ready(function() {
 
 		//SmothScroll
 		$('a[href*=#]').click(function() {
+				$(this).blur();
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 			&& location.hostname == this.hostname) {
 					var $target = $(this.hash);
