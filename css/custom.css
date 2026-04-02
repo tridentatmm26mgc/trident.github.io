@@ -432,6 +432,39 @@ padding: 8px 12px;
     margin-bottom: 32px;
 }
 
+/* ── Home two-column layout ──────────────────────────────────── */
+.home-two-col {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+.home-text-col {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.home-poster-col {
+    flex: 0 0 320px;
+    position: sticky;
+    top: 80px;
+}
+.home-poster-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(44, 62, 80, 0.12);
+    border: 1px solid #e8edf2;
+}
+@media (max-width: 991px) {
+    .home-two-col {
+        flex-direction: column;
+    }
+    .home-poster-col {
+        flex: none;
+        width: 100%;
+        position: static;
+    }
+}
+
 /* ── Scope intro card ────────────────────────────────────────── */
 .scope-intro {
     background: #fff;
