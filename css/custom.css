@@ -1,6 +1,14 @@
 /* Owl Carousel Bootstrap Custom CSS */
 
 /* Header Navigation */
+nav.navbar-default {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 #top-nav{
 	border-bottom: 1px solid #e1e6dd;
 	background: #FFF;
