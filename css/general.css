@@ -223,6 +223,11 @@ color: #ffffff;
 color: #ECEBEB;
 }
 
+.navbar-default .navbar-nav>li.active>a {
+color: #ECEBEB;
+border-bottom: 2px solid #ECEBEB;
+}
+
 .navbar-default .navbar-brand {
 color: #ffffff;
 }

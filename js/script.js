@@ -51,6 +51,22 @@ $(document).ready(function() {
 			  singleItem:true
 		});
 
+		//Scrollspy - highlight active nav item
+		$(window).on('scroll', function () {
+			var scrollPos = $(window).scrollTop() + 80;
+			$('.menuItem a').each(function () {
+				var section = $(this).attr('href');
+				if (section && section.indexOf('#') === 0 && $(section).length) {
+					var top = $(section).offset().top;
+					var bottom = top + $(section).outerHeight();
+					if (scrollPos >= top && scrollPos < bottom) {
+						$('.menuItem').removeClass('active');
+						$(this).parent().addClass('active');
+					}
+				}
+			});
+		});
+
 		//SmothScroll
 		$('a[href*=#]').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
