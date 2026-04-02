@@ -280,6 +280,15 @@ padding: 8px 12px;
     line-height: 1.65;
     margin: 0;
 }
+.procedure-step-desc a {
+    color: #2176ae;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.procedure-step-desc a:hover {
+    color: #145a8a;
+}
 .procedure-divider {
     border-top: 1px solid #e8edf2;
     margin: 0;
