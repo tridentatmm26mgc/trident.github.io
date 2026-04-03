@@ -152,6 +152,33 @@ padding: 8px 12px;
     }
 }
 
+/* ── CFP PDF embed ───────────────────────────────────────────── */
+.cfp-embed {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.cfp-embed iframe {
+    width: 100%;
+    height: 920px;
+    border: none;
+    display: block;
+}
+
+.section-heading .cfp-download {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.4rem;
+    color: #888;
+    vertical-align: middle;
+}
+.section-heading .cfp-download:hover {
+    color: #2563eb;
+}
+
 /* ── Section header (Important Dates) ────────────────────────── */
 .section-header {
     margin-bottom: 32px;
