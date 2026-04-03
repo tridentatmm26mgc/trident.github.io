@@ -481,7 +481,9 @@ padding: 8px 12px;
     color: #2c3e50 !important;
 }
 .mybutton_cyano:hover {
+    background: #fff !important;
     color: #4A90BE !important;
+    border-color: #fff !important;
 }
 
 .wrap_title{margin-bottom: 30px;}
