@@ -1,0 +1,4 @@
+The exploitation of the power of big data in the last few years led to a big step forward in many applications of Computer Vision. However, most of the tasks tackled so far are involving mainly visual modality due to the unbalanced number of labelled samples available among modalities (e.g., there are many huge labelled datasets for images while not as many for audio or IMU based classification), resulting in a huge gap in performance when algorithms are trained separately. 
+
+This workshop aims to bring together communities of machine learning and multimodal data fusion. We expect contributions involving video, audio, depth, IR, IMU, laser, text, drawings, synthetic, etc. Position papers with feasibility studies and cross-modality issues with highly applicative flair are also encouraged therefore we expect a positive response from academic and industrial communities.
+
